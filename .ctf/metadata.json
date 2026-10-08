@@ -1,0 +1,14 @@
+{
+  "title": "Google CTF 2024: desfunctional",
+  "description": "A Triple DES (CBC) server that hands out an encrypted challenge and decrypts your ciphertexts with a key that gets more corrupted bits on every query. Send back the challenge plaintext to get the flag.",
+  "question": "Retrieve the flag from the challenge service.",
+  "category": "CRYPTO",
+  "difficulty": 3,
+  "evidence_kind": "SECRET",
+  "capabilities": [
+    "des",
+    "complementation-property",
+    "fault-injection",
+    "cryptography"
+  ]
+}
