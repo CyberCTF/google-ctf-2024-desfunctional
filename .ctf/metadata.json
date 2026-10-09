@@ -4,11 +4,5 @@
   "question": "Retrieve the flag from the challenge service.",
   "category": "CRYPTO",
   "difficulty": 3,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "des",
-    "complementation-property",
-    "fault-injection",
-    "cryptography"
-  ]
+  "evidence_kind": "SECRET"
 }
