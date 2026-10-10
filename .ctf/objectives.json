@@ -1,0 +1,48 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Get the flag",
+      "prompt": "Decrypt the challenge ciphertext despite the corrupted key and claim the flag.",
+      "check": {
+        "evidence": "SECRET",
+        "format": "CTF{%s}"
+      },
+      "dev": "CTF{dev-google-ctf-2024-desfunctional}",
+      "hints": [
+        "The key changes under you: which bits get corrupted?",
+        "DES has a well-known property linking complemented keys, plaintexts and ciphertexts."
+      ],
+      "steps": [
+        {
+          "key": "cipher",
+          "title": "Identify the cipher",
+          "prompt": "Which block cipher does the server use?",
+          "check": {
+            "answer": [
+              "3des",
+              "triple des",
+              "tdes",
+              "des",
+              "des3",
+              "tdea"
+            ]
+          }
+        },
+        {
+          "key": "property",
+          "title": "Name the property",
+          "prompt": "Which DES property survives a complemented key?",
+          "check": {
+            "answer": [
+              "complementation property",
+              "complementation",
+              "complement property",
+              "complementation symmetry"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
