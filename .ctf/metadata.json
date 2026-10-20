@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-google-ctf-2024-desfunctional",
+  "slug": "google-ctf-2024-desfunctional",
   "title": "Google CTF 2024: desfunctional",
   "description": "A Triple DES (CBC) server that hands out an encrypted challenge and decrypts your ciphertexts with a key that gets more corrupted bits on every query. Send back the challenge plaintext to get the flag.",
-  "question": "Recover the challenge plaintext despite the key corruption and get the flag.",
-  "category": "CRYPTO",
+  "category": "crypto",
   "difficulty": 3,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Recover the challenge plaintext despite the key corruption and get the flag."
 }
